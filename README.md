@@ -38,7 +38,7 @@ List any software, libraries, or other tools that users need to install before t
   Provide step-by-step instructions on how to install your project.
 
 Installation:
-1. Unzip the project
+1. Clone the project by 'git clone https://github.com/ankushbhan55/GameDev.git'
 2. Open the project in intelliJ
 3. (Option 1) Simply run 'GameDevApplication' and navigate to 'http://localhost:8080/swagger-ui/index.html'
    (Option 2) mvn spring-boot:run
