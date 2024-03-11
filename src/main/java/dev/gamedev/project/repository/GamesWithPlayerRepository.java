@@ -24,6 +24,6 @@ public interface GamesWithPlayerRepository extends JpaRepository<GamesWithPlayer
     List<GamesWithPlayer> findMaxCredit();
 
     List<GamesWithPlayer> findByLevel_NameAndGame_NameAndPlayer_Country_CountryName(String level, String game, String country);
-    Optional<GamesWithPlayer> findByPlayer_IdAndGame_Name(Long playerID, String gameName);
+    Optional<GamesWithPlayer> findByPlayer_EmailAndGame_Name(String playerEmail, String gameName);
 
 }

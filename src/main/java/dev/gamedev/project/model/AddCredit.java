@@ -8,7 +8,7 @@ public class AddCredit {
 
     private String gameName;
 
-    private String playerId;
+    private String playerEmail;
 
     private String credit;
 }

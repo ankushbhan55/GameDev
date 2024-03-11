@@ -62,7 +62,7 @@ public class PlayerController {
     @PostMapping(path="/addcredit")
     public ResponseEntity addCredits(@RequestBody AddCredit addCredit) {
 
-        GamesWithPlayer playerwithGame = gameswithplayerService.findByPlayerAndGame(Long.parseLong(addCredit.getPlayerId()),
+        GamesWithPlayer playerwithGame = gameswithplayerService.findByPlayerAndGame(addCredit.getPlayerEmail(),
                addCredit.getGameName());
         if(playerwithGame == null) {
          return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Player does not play the game");

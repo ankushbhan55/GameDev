@@ -28,8 +28,8 @@ public class GamesWithPlayerService {
        return gameswithplayerRepo.findMaxCredit();
     }
 
-    public GamesWithPlayer findByPlayerAndGame(long playerId, String gameName) {
-        return gameswithplayerRepo.findByPlayer_IdAndGame_Name(playerId, gameName).orElse(null);
+    public GamesWithPlayer findByPlayerAndGame(String playerEmail, String gameName) {
+        return gameswithplayerRepo.findByPlayer_EmailAndGame_Name(playerEmail, gameName).orElse(null);
     }
 
     public void save(GamesWithPlayer playerwithGame) {
